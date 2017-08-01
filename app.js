@@ -21,7 +21,22 @@ var pool = mysql.createPool({
 });
 app.use(express.static("public"));
 app.use(express.static("views"));
-
+//跳转订单页面
+app.get("/myOrder", (req, res) => {
+    console.log(req.query.uid);
+    var uid=req.query.uid;
+    pool.getConnection((err, conn) => {
+        var sql = "select o.oid,sname,sprice,sdate,count,status from dm_order o left join dm_user u on o.uid=u.uid left join dm_show s on o.sid=s.sid where o.uid=?";
+        conn.query(sql, [uid], (err, result) => {
+                if(err) throw err;
+                if(result.length){
+                    res.json({code:1,cxt:result});
+                }else{
+                    res.json({code:-1,msg:"您还没有相关的订单信息。"});
+                }
+        });
+    });
+});
 //注册验证用户名
 app.post("/regNameChk", (req, res) => {
     req.on("data", (data) => {
@@ -89,7 +104,7 @@ app.post("/login", (req, res) => {
                     res.json({
                         code: 1,
                         msg: "登录成功",
-                        uid:result[0].uid
+                        uid: result[0].uid
                     });
                 } else {
                     res.json({
