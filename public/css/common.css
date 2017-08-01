@@ -1,0 +1,60 @@
+body {
+    font-family: "Microsoft YaHei";
+}
+
+.clear {
+    clear: both;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*登录注册页面的头部*/
+#b-top {
+    background: #fff;
+}
+#b-top > div.wrapper {
+    padding: 25px 0;
+    width: 1000px;
+    overflow: auto;
+}
+#b-top a.logo {
+    float: left;
+}
+#b-top a.logo > img {
+    width: 120px;
+    height: 45px;
+}
+#b-top h1 {
+    margin-left: 25px;
+    padding-left: 25px;
+    line-height: 45px;
+    float: left;
+    font-weight: normal;
+    font-size: 28px;
+    border-left: 1px solid #CCCCCC;
+}
+/*通用底部样式*/
+#footer{
+    border-top: 1px solid #e5e5e5;
+    margin-top: 10px;
+    background: #FAFAFA;
+}
+#footer > div > div > ul {
+    display: flex;
+    justify-content: center;
+}
+#footer > div > div > ul > li > a {
+    display: block;
+    margin: 20px 8px;
+    font-size: 14px;
+    color: #777777;
+}
+#footer > div > div > ul > li > a:hover {
+    text-decoration: underline;
+    color: #D43A5A;
+    cursor: pointer;
+}

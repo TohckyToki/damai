@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/Normalize.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/toastr.css">
+</head>
+
+<body>
+    <div id="b-top">
+        <div class="wrapper">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+            <h1>欢迎登录</h1>
+        </div>
+    </div>
+    <div id="b-body">
+        <div class="wrapper">
+            <div class="b-pic">
+                <div>
+                    <a href=""><img src="img/slide/4.jpg" alt=""></a>
+                </div>
+            </div>
+            <form class="b-login" method="post">
+                <ul>
+                    <li class="active"><a><i class="fa fa-user"></i>账户登录</a></li>
+                    <li><a><i class="fa fa-qrcode"></i>二维码登录</a></li>
+                </ul>
+                <div class="b-account">
+                    <div class="b-user">
+                        <span class="fa fa-user-circle fa-2x"></span><input type="text" name="uname" placeholder="邮箱/手机号码">
+                    </div>
+                    <div class="b-pwd">
+                        <span class="fa fa-key fa-2x"></span><input type="password" name="upwd" placeholder="登录密码">
+                    </div>
+                    <input id="btn-login" type="button" value="立即登录">
+                    <p><a href="register.html">立即注册</a></p>
+                </div>
+                <div class="b-QR">
+                    <p>扫码登录</p>
+                    <div>
+                        <p>用大麦手机客户端扫码快速登录</p>
+                        <img src="img/QR.jpg" alt="" width="165px" height="165px">
+                        <p><i class="fa fa-refresh"></i> 刷新一下</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="wrapper">
+            <div>
+                <ul>
+                    <li><a href="">公司介绍</a></li>
+                    <li><a href="">品牌识别</a></li>
+                    <li><a href="">企业荣誉</a></li>
+                    <li><a href="">联系方式</a></li>
+                    <li><a href="">隐私声明</a></li>
+                    <li><a href="">合作招商</a></li>
+                    <li><a href="">招聘信息</a></li>
+                    <li><a href="">网站地图</a></li>
+                    <li><a href="">友情链接</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/toastr.js"></script>
+    <script src="js/login.js"></script>
+    <script>
+        "use strict";
+    </script>
+</body>
+
+</html>

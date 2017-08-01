@@ -1,0 +1,100 @@
+#head {
+  background: #E51B46;
+  height: 50px;
+  div.wrapper {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+#head div.head-left {
+  float: left;
+  display: flex;
+  align-items: center;
+  > div {
+    > a {
+      height: 50px;
+      padding: 15px;
+      font-size: 16px;
+      color: #fff;
+      display: block;
+    }
+    > a.logo {
+      margin-right: 15px;
+      padding: 0;
+      width: 86px;
+      background: url(../img/m-logo.png) no-repeat center;
+    }
+    a:not(.logo):hover {
+      background: #CC173E;
+    }
+  }
+}
+
+#head div.head-right {
+  > div {
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    font-size: 13px;
+    color: #fff;
+    padding: 0 30px;
+    text-align: left;
+    div {
+      color: #fff;
+    }
+    a {
+      color: #fff;
+    }
+  }
+  > div:nth-child(2) {
+    width: 200px;
+    border-right: 1px solid rgba(255, 255, 255, 0.32);
+    border-left: 1px solid rgba(255, 255, 255, 0.32);
+    > img {
+      width: 30px;
+      height: 30px;
+      float: left;
+      margin-right: 15px;
+      margin-top: 10px;
+    }
+  }
+  > div:nth-child(3) {
+    width: 150px;
+    color: #fff;
+    > span {
+      position: relative;
+      display: inline;
+      width: 150px;
+      color: #fff;
+      margin-right: 10px;
+      top: 1px;
+    }
+  }
+  div:not(.search):hover {
+    background: #CC173E;
+  }
+}
+
+#head div.head-right {
+  float: left;
+  display: flex;
+  align-items: center;
+  input {
+    outline: none;
+    height: 30px;
+    border: none;
+    width: 250px;
+    padding-right: 25px;
+    padding-left: 10px;
+    font-size: 13px;
+  }
+  div.search > span {
+    position: absolute;
+    line-height: 50px;
+    right: 37px;
+    color: #ababab;
+  }
+}
