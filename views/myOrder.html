@@ -7,8 +7,11 @@
 	<link rel="stylesheet" href="css/Normalize.css">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/myOrder.css">
 	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/myOrder.js"></script>
 </head>
 
 <body>
@@ -25,7 +28,7 @@
 				<div class="left">
 					<ul>
 						<li><a href="index.html"><img src="img/logo.png" alt=""></a></li>
-						<li><a href="">我的订单</a></li>
+						<li class="active"><a href="">我的订单</a></li>
 						<li><a href="">未完成的订单</a></li>
 						<li><a href="">已完成的订单</a></li>
 						<li><a href="">订单分析</a></li>
@@ -43,6 +46,8 @@
 								<td>操作</td>
 							</tr>
 						</thead>
+						<tbody id="tbody">
+						</tbody>
 					</table>
 				</div>
 			</div>
@@ -133,9 +138,6 @@
 			</div>
 		</div>
 	</footer>
-
-
-	<script src="js/index.js"></script>
 	<script>
 		"use strict";
 	</script>
