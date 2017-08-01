@@ -1,7 +1,7 @@
 /*jshint esversion: 6 */
 $(function () {
 	if (sessionStorage.length != 0) {
-		$("#top ul.top-left>li:nth-child(1)").html(`<li>Hi,${sessionStorage.getItem("uname")},欢迎来大麦网 <a href="#" class="logout">[退出登录]</a></li>`);
+		$("#top ul.top-left>li:nth-child(1)").html(`<li>Hi，${sessionStorage.getItem("uname")}，欢迎来大麦网 <a href="#" class="logout">[退出登录]</a></li>`);
 	}
 
 	//退出登录按钮
