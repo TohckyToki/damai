@@ -558,9 +558,16 @@ div.header_box > div.search > div.hotwords > a:hover {
   border-top: none;
   display: none;
   width: 1200px;
+  position: relative;
 }
 #news1 div.active {
   display: flex;
+}
+#news1 ul.head + div a.refresh {
+  position: absolute;
+  right: 30px;
+  top: -30px;
+  font-size: 14px;
 }
 #news2 > div {
   display: flex;
