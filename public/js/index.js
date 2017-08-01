@@ -27,7 +27,7 @@ $(function () {
             $("#slide-ul>li:nth-child(1)").toggleClass("active").siblings().removeClass("active");
             $ul.css("backgroundColor", colors[0]);
         }
-    }, 3000);
+    }, 2500);
     //轮播箭头显示切换
     $("#header div.slide").hover(function () {
         $("#header div.slide-indication > div.wrapper > a").toggle();
@@ -38,5 +38,16 @@ $(function () {
         $(this).addClass("active").siblings("li").removeClass("active");
         var _divInfo = $(this).closest("div.wrapper").find("div")[index];
         $(_divInfo).addClass("active").siblings("div").removeClass("active");
+    });
+});
+
+//页面数据加载
+$(function () {
+    //分类列表图文加载
+    $.ajax({
+        url:"/categaryList",
+        success:function(result){
+            console.log(result);
+        }
     });
 });
