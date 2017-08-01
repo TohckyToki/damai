@@ -16,4 +16,15 @@ $(function () {
 		e.stopPropagation();
 		$(this).children("div").toggleClass("collapse");
 	});
+
+	//我的订单
+	$("#myOrder").click(function (e) {
+		e.preventDefault();
+		var uid = sessionStorage.getItem("uid") ? sessionStorage.getItem("uid") : false;
+		if (uid) {
+			location.href="myOrder.html";
+		} else {
+			toastr.error('很抱歉，您没有登录，没有进入订单页面的权限。请先登录，或者立即注册。');
+		}
+	});
 });
