@@ -1,0 +1,37 @@
+#footer {
+  border-top: 1px solid #e5e5e5;
+  margin-top: 25px;
+  background: #FAFAFA;
+}
+#footer > div > div:nth-child(1) {
+  padding: 10px 50px 20px 25px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid #E51B46;
+}
+#footer > div > div > dl > dt {
+  font-size: 16px;
+  margin: 15px 0;
+}
+#footer > div > div > dl > dd > a {
+  display: block;
+  margin: 8px 0;
+  color: #777777;
+}
+#footer > div > div > dl > dd > a:hover {
+  text-decoration: underline;
+  color: #D43A5A;
+  cursor: pointer;
+}
+#footer > div > div > dl > dd > img {
+  width: 114px;
+  height: 114px;
+}
+#footer > div > div > dl > dd > img.wechat {
+  width: 114px;
+  height: 114px;
+}
+#footer > div > div > dl > dd > img.touch {
+  width: 114px;
+  height: 114px;
+}
