@@ -88,7 +88,8 @@ app.post("/login", (req, res) => {
                 if (result.length) {
                     res.json({
                         code: 1,
-                        msg: "登录成功"
+                        msg: "登录成功",
+                        uid:result[0].uid
                     });
                 } else {
                     res.json({

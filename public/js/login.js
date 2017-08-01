@@ -21,6 +21,7 @@
 					if (result.code == 1) {
 						sessionStorage.setItem("uname", ipt_name.val());
 						sessionStorage.setItem("upwd", ipt_pwd.val());
+						sessionStorage.setItem("uid", result.uid);
 						toastr.success('登录成功,3s后将返回主页');
 						setTimeout(function () {
 							location.href = "index.html";
