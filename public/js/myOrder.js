@@ -37,7 +37,7 @@ $(function () {
 	})();
 
 	//左侧导航样式切换
-	$("#order div.left li").click(function (e) {
+	$("#order div.left li:not(:nth-child(1))").click(function (e) {
 		e.preventDefault();
 		$(this).addClass("active").siblings("li").removeClass("active");
 	});
