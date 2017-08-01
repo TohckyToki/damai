@@ -7,9 +7,9 @@ CREATE TABLE dm_user(
  upwd  VARCHAR(32),
  uvalid VARCHAR(10)
 );
-INSERT INTO dm_user VALUES(null,'tzw','123456','');
-INSERT INTO dm_user VALUES(null,'tony','123456','');
-INSERT INTO dm_user VALUES(null,'jack','123456','');
+INSERT INTO dm_user VALUES(null,'tzw123','123456','');
+INSERT INTO dm_user VALUES(null,'tony123','123456','');
+INSERT INTO dm_user VALUES(null,'jack123','123456','');
 
 CREATE TABLE dm_show(
  sid   INT PRIMARY KEY AUTO_INCREMENT,
