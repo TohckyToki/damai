@@ -128,7 +128,7 @@ app.post("/login", (req, res) => {
 app.post("/categaryList", (req, res) => {
     pool.getConnection((err, conn) => {
         if (err) throw err;
-        var list={};
+        var list = {};
         var sql = "select * from dm_showtype t left join dm_show s on t.tid=s.tid where uname=? and upwd=?";
         conn.query(sql, [uname, upwd], (err, result) => {
             if (err) throw err;
@@ -144,6 +144,19 @@ app.post("/categaryList", (req, res) => {
                     msg: "登陆失败"
                 });
             }
+        });
+    });
+});
+
+
+//换一换功能
+app.get("/refresh", (req, res) => {
+    pool.getConnection((err, conn) => {
+        if (err) throw err;
+        var sql = "select * from dm_show order by rand() limit 5";
+        conn.query(sql, (err, result) => {
+            if (err) throw err;
+            res.json(result);
         });
     });
 });

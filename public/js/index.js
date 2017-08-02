@@ -39,6 +39,17 @@ $(function () {
         var _divInfo = $(this).closest("div.wrapper").find("div")[index];
         $(_divInfo).addClass("active").siblings("div").removeClass("active");
     });
+
+    //换一换功能
+    $("#refresh").click(function(e){
+        e.preventDefault();
+        $.ajax({
+            url:"/refresh",
+            success:function(result){
+                console.log(result);
+            }
+        });
+    });
 });
 
 //页面数据加载
@@ -48,6 +59,8 @@ $(function () {
         url:"/categaryList",
         success:function(result){
             console.log(result);
+            $("#news1>div>div:nth-child(1)").html();
         }
     });
+
 });
